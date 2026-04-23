@@ -1,101 +1,49 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FitLife Training</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FitLife Training</title>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
-    <h1>FitLife Training</h1>
-
-    <nav>
-        <ul>
-            <li><a href="index.html">Hem</a></li>
-            <li><a href="about.html">Om oss</a></li>
-            <li><a href="program.html">Träningsprogram</a></li>
-            <li><a href="kontakt.html">Kontakt</a></li>
-        </ul>
-    </nav>
+<h1>FitLife Training</h1>
+<nav class="navbar">
+<ul class="nav-links">
+<li><a href="index.html">Hem</a></li>
+<li><a href="about.html">Om oss</a></li>
+<li><a href="program.html">Program</a></li>
+<li><a href="shop.html">Shop</a></li>
+<li><a href="kontakt.html">Kontakt</a></li>
+</ul>
+<div class="cart-icon">🛒 <span id="cart-count">0</span></div>
+</nav>
 </header>
 
 <main>
-
 <section class="hero">
-    <h2>Börja din träningsresa idag</h2>
-    <p>FitLife Training hjälper dig att förbättra din hälsa med enkla och effektiva träningsprogram.</p>
-
-    <img src="images/training.jpg" alt="Person som tränar på gym">
-
-    <button id="startBtn">Börja träna</button>
+<h2>Börja träna idag</h2>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB9uC70adCTnifMQ8Nj90z5qA-fIZJbcizyw&s" alt="träning">
 </section>
 
-<section class="program">
-    <h2>Våra träningsprogram</h2>
-
-    <article class="program-card">
-        <h3>Styrketräning</h3>
-        <p>Ett program för dig som vill bygga muskler och bli starkare.</p>
-        <button class="infoBtn">Läs mer</button>
-    </article>
-
-    <article class="program-card">
-        <h3>Kondition</h3>
-        <p>Perfekt för dig som vill förbättra uthållighet och kondition.</p>
-        <button class="infoBtn">Läs mer</button>
-    </article>
-
-    <article class="program-card">
-        <h3>Hemmaträning</h3>
-        <p>Träningsprogram du kan göra hemma utan utrustning.</p>
-        <button class="infoBtn">Läs mer</button>
-    </article>
-
-</section>
-
-<section class="bmi">
+<section>
     <h2>BMI-räknare</h2>
 
-    <form id="bmiForm">
-        <label for="height">Längd (cm)</label>
-        <input type="number" id="height" name="height" required>
+    <input id="age" type="number" placeholder="Ålder">
+    <input id="height" type="number" placeholder="Längd (cm)">
+    <input id="weight" type="number" placeholder="Vikt (kg)">
 
-        <label for="weight">Vikt (kg)</label>
-        <input type="number" id="weight" name="weight" required>
+    <button onclick="calculateBMI()">Räkna BMI</button>
 
-        <button type="submit">Räkna ut BMI</button>
-    </form>
-
-    <p id="result"></p>
+    <p id="bmiResult"></p>
 </section>
-
-<section class="contact">
-    <h2>Kontakta oss</h2>
-
-    <form>
-        <label for="name">Namn</label>
-        <input type="text" id="name" name="name" required>
-
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="message">Meddelande</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
-
-        <button type="submit">Skicka</button>
-    </form>
-</section>
-
 </main>
 
-<footer>
-    <p>2026 FitLife Training</p>
-</footer>
+<footer>© 2026 FitLife</footer>
 
 <script src="script.js"></script>
-
 </body>
 </html>

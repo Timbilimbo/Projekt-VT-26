@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - FitLife</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+<header>
+    <h1>FitLife Training</h1>
+
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="index.html">Hem</a></li>
+            <li><a href="about.html">Om oss</a></li>
+            <li><a href="program.html">Program</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+
+       
+        <div class="cart-icon">
+            🛒 <span id="cart-count">0</span>
+        </div>
+    </nav>
+</header>
+
+
+<main>
+
+    <h2>Shop</h2>
+
+    
+    <div class="products">
+
+        <div class="product">
+            <img src="data:image/jpeg;base64,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" alt="Hantel">
+            <h3>Hantel</h3>
+            <p>199 kr</p>
+            <button onclick="addToCart('Hantel', 199)">
+                Lägg i kundvagn
+            </button>
+        </div>
+
+        <div class="product">
+            <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSQ0Uq_Cm1hUq0MbYbWgFXLfkMtPYKojrNGuJYvZoHMddAba4kbjdMk_tvN_MRI8OskzpYAGi8AiSpTDHjydBjy_0rsbobYp0F7-vkGsQwo2yYBa_XrFoan--DU7T795PQ3j5QJxA&usqp=CAc">
+            <h3>Yogamatta</h3>
+            <p>149 kr</p>
+            <button onclick="addToCart('Yogamatta', 149)">
+                Lägg i kundvagn
+            </button>
+        </div>
+
+        <div class="product">
+            <img src="data:image/webp;base64,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" alt="Vattenflaska">
+            <h3>Vattenflaska</h3>
+            <p>99 kr</p>
+            <button onclick="addToCart('Vattenflaska', 99)">
+                Lägg i kundvagn
+            </button>
+        </div>
+
+    </div>
+
+    <!-- VARUKORG -->
+    <div class="cart">
+        <h3>Din varukorg</h3>
+
+        <ul id="cartList"></ul>
+
+        <p id="total"></p>
+
+        <button onclick="checkout()">Betala</button>
+    </div>
+
+</main>
+
+
+<footer>
+    <p>© 2026 FitLife Training</p>
+</footer>
+
+<script src="Script.js"></script>
+
+</body>
+</html>

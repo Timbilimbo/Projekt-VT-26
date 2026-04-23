@@ -1,10 +1,49 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="sv">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<title>Program</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+
+<header>
+<h1>FitLife Training</h1>
+<nav class="navbar">
+<ul class="nav-links">
+<li><a href="index.html">Hem</a></li>
+<li><a href="about.html">Om oss</a></li>
+<li><a href="program.html">Program</a></li>
+<li><a href="shop.html">Shop</a></li>
+<li><a href="kontakt.html">Kontakt</a></li>
+</ul>
+<div class="cart-icon">🛒 <span id="cart-count">0</span></div>
+</nav>
+</header>
+
+<main class="program">
+
+<div class="program-card">
+<h3>Styrketräning</h3>
+<button onclick="addToCart('Styrketräning', 299)">Lägg i kundvagn</button>
+</div>
+
+<div class="program-card">
+<h3>Kondition</h3>
+<button onclick="addToCart('Kondition', 199)">Lägg i kundvagn</button>
+</div>
+
+<div class="program-card">
+<h3>Hemmaträning</h3>
+<button onclick="addToCart('Hemmaträning', 149)">Lägg i kundvagn</button>
+</div>
+
+</main>
+
+<footer>© 2026 FitLife</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
