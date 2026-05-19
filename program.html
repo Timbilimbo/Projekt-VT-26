@@ -11,6 +11,7 @@
 
 <header>
 <h1>FitLife Training</h1>
+
 <nav class="navbar">
 <ul class="nav-links">
 <li><a href="index.html">Hem</a></li>
@@ -19,30 +20,47 @@
 <li><a href="shop.html">Shop</a></li>
 <li><a href="kontakt.html">Kontakt</a></li>
 </ul>
-<div class="cart-icon">🛒 <span id="cart-count">0</span></div>
+
+<div class="cart-icon" onclick="goToCart()">
+    🛒 <span id="cart-count">0</span>
+</div>
 </nav>
 </header>
 
-<main class="program">
+<main>
+
+<h2>Träningsprogram</h2>
+
+<div class="program-grid">
 
 <div class="program-card">
+<img src="images/strength.jpg" alt="Styrketräning">
 <h3>Styrketräning</h3>
-<button onclick="addToCart('Styrketräning', 299)">Lägg i kundvagn</button>
+<p>Bygg muskler och bli starkare.</p>
+<button onclick="addToCart('Styrketräning',299)">Köp</button>
 </div>
 
 <div class="program-card">
+<img src="images/cardio.jpg" alt="Kondition">
 <h3>Kondition</h3>
-<button onclick="addToCart('Kondition', 199)">Lägg i kundvagn</button>
+<p>Förbättra din uthållighet.</p>
+<button onclick="addToCart('Kondition',199)">Köp</button>
 </div>
 
 <div class="program-card">
+<img src="images/home.jpg" alt="Hemmaträning">
 <h3>Hemmaträning</h3>
-<button onclick="addToCart('Hemmaträning', 149)">Lägg i kundvagn</button>
+<p>Träna hemma enkelt.</p>
+<button onclick="addToCart('Hemmaträning',149)">Köp</button>
+</div>
+
 </div>
 
 </main>
 
-<footer>© 2026 FitLife</footer>
+<footer>
+<p>© 2026 FitLife Training</p>
+</footer>
 
 <script src="script.js"></script>
 </body>

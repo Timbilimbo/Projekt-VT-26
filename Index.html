@@ -11,6 +11,7 @@
 
 <header>
 <h1>FitLife Training</h1>
+
 <nav class="navbar">
 <ul class="nav-links">
 <li><a href="index.html">Hem</a></li>
@@ -19,30 +20,75 @@
 <li><a href="shop.html">Shop</a></li>
 <li><a href="kontakt.html">Kontakt</a></li>
 </ul>
-<div class="cart-icon">🛒 <span id="cart-count">0</span></div>
+
+<div class="cart-icon" onclick="goToCart()">
+    🛒 <span id="cart-count">0</span>
+</div>
 </nav>
 </header>
 
 <main>
+
+<!-- HERO -->
 <section class="hero">
-<h2>Börja träna idag</h2>
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB9uC70adCTnifMQ8Nj90z5qA-fIZJbcizyw&s" alt="träning">
+<div class="hero-text">
+<h2>Bygg din bästa version</h2>
+<p>Träningsprogram, coaching och verktyg för att nå dina mål.</p>
+<a href="program.html" class="cta-btn">Kom igång</a>
+</div>
 </section>
 
-<section>
-    <h2>BMI-räknare</h2>
+<!-- FEATURES -->
+<section class="features">
 
-    <input id="age" type="number" placeholder="Ålder">
-    <input id="height" type="number" placeholder="Längd (cm)">
-    <input id="weight" type="number" placeholder="Vikt (kg)">
+<div class="feature-card">
+<h3>🏋️ Träningsprogram</h3>
+<p>Program anpassade för alla nivåer.</p>
+</div>
 
-    <button onclick="calculateBMI()">Räkna BMI</button>
+<div class="feature-card">
+<h3>💪 Coaching</h3>
+<p>Få stöd av experter.</p>
+</div>
 
-    <p id="bmiResult"></p>
+<div class="feature-card">
+<h3>🔥 Resultat</h3>
+<p>Se verkliga förbättringar.</p>
+</div>
+
 </section>
+
+<!-- BMI -->
+<section class="bmi-section">
+<h2>BMI-räknare</h2>
+
+<input id="age" type="number" placeholder="Ålder">
+<input id="height" type="number" placeholder="Längd (cm)">
+<input id="weight" type="number" placeholder="Vikt (kg)">
+
+<button onclick="calculateBMI()">Räkna BMI</button>
+
+<p id="bmiResult"></p>
+
+<div class="bmi-scale">
+<div class="bmi-marker" id="bmi-marker"></div>
+</div>
+
+<div class="bmi-labels">
+<span>0</span>
+<span>18.5</span>
+<span>25</span>
+<span>30</span>
+<span>40+</span>
+</div>
+
+</section>
+
 </main>
 
-<footer>© 2026 FitLife</footer>
+<footer>
+<p>© 2026 FitLife Training</p>
+</footer>
 
 <script src="script.js"></script>
 </body>

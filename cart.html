@@ -2,8 +2,8 @@
 <html lang="sv">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width">
-<title>Kontakt</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Varukorg - FitLife</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
@@ -11,6 +11,7 @@
 
 <header>
 <h1>FitLife Training</h1>
+
 <nav class="navbar">
 <ul class="nav-links">
 <li><a href="index.html">Hem</a></li>
@@ -19,6 +20,7 @@
 <li><a href="shop.html">Shop</a></li>
 <li><a href="kontakt.html">Kontakt</a></li>
 </ul>
+
 <div class="cart-icon" onclick="goToCart()">
     🛒 <span id="cart-count">0</span>
 </div>
@@ -26,19 +28,36 @@
 </header>
 
 <main>
-<h2>Kontakt</h2>
 
-<form onsubmit="validateForm(event)">
-<input id="name" placeholder="Namn">
-<input id="email" placeholder="Email">
-<textarea id="message" placeholder="Meddelande"></textarea>
-<button>Skicka</button>
-</form>
+<h2>Din varukorg</h2>
+
+<div class="cart-page">
+
+<table>
+<thead>
+<tr>
+<th>Produkt</th>
+<th>Pris</th>
+<th>Ta bort</th>
+</tr>
+</thead>
+
+<tbody id="cartTable"></tbody>
+</table>
+
+<h3 id="cartTotal"></h3>
+
+<button onclick="checkout()">Slutför köp</button>
+
+</div>
 
 </main>
 
-<footer>© 2026 FitLife</footer>
+<footer>
+<p>© 2026 FitLife Training</p>
+</footer>
 
 <script src="script.js"></script>
+
 </body>
 </html>

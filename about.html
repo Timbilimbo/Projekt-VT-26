@@ -2,8 +2,8 @@
 <html lang="sv">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width">
-<title>Om oss</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Om oss - FitLife</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
@@ -11,6 +11,7 @@
 
 <header>
 <h1>FitLife Training</h1>
+
 <nav class="navbar">
 <ul class="nav-links">
 <li><a href="index.html">Hem</a></li>
@@ -19,16 +20,77 @@
 <li><a href="shop.html">Shop</a></li>
 <li><a href="kontakt.html">Kontakt</a></li>
 </ul>
-<div class="cart-icon">🛒 <span id="cart-count">0</span></div>
+
+<div class="cart-icon" onclick="goToCart()">
+    🛒 <span id="cart-count">0</span>
+</div>
 </nav>
 </header>
 
 <main>
-<h2>Om oss</h2>
-<p>Vi hjälper dig komma igång med träning.</p>
+
+<!-- HERO -->
+<section class="about-hero">
+<h2>Om FitLife Training</h2>
+<p>Vi hjälper dig nå dina träningsmål – oavsett nivå.</p>
+</section>
+
+<!-- OM OSS -->
+<section class="about-content">
+
+<div class="about-text">
+<h3>Vår idé</h3>
+<p>
+FitLife Training skapades för att göra träning enkel, tillgänglig och motiverande.
+Vi tror att alla kan förbättra sin hälsa med rätt vägledning och struktur.
+</p>
+
+<h3>Vår vision</h3>
+<p>
+Att hjälpa människor bygga hållbara träningsvanor och må bättre i vardagen.
+</p>
+</div>
+
+<div class="about-image">
+<img src="images/team.jpg" alt="Tränare">
+</div>
+
+</section>
+
+<!-- TEAM -->
+<section class="team">
+
+<h2>Vårt team</h2>
+
+<div class="team-grid">
+
+<div class="team-card">
+<img src="images/person1.jpg" alt="Tränare">
+<h3>Alex</h3>
+<p>Personlig tränare</p>
+</div>
+
+<div class="team-card">
+<img src="images/person2.jpg" alt="Tränare">
+<h3>Sara</h3>
+<p>Kostrådgivare</p>
+</div>
+
+<div class="team-card">
+<img src="images/person3.jpg" alt="Tränare">
+<h3>Jonas</h3>
+<p>Coach</p>
+</div>
+
+</div>
+
+</section>
+
 </main>
 
-<footer>© 2026 FitLife</footer>
+<footer>
+<p>© 2026 FitLife Training</p>
+</footer>
 
 <script src="script.js"></script>
 </body>
